@@ -13,7 +13,7 @@ html body {
 body {
     display: grid;
     grid-template-columns: 15rem 4fr;
-    gap: 5px;
+    
     
     
 }
@@ -87,17 +87,7 @@ body {
 
 
 
-.content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-}
 
-
-.content .card {
-    height: 200px;
-    border: 1px solid black;
-}
 
 
 .topHeader{
@@ -154,10 +144,9 @@ input[type="search"] {
     margin-right: 60px;
 }
 .account img{
-    width: 70px;
+    width:  50px;
     border-radius: 50%;
     cursor: pointer;
-    height: 50px;
     
 }
 
@@ -168,10 +157,9 @@ input[type="search"] {
     margin-top: 20px;
 }
 .accountPic2 img{
-    width: 70px;
+    width: 50px;
     border-radius: 50%;
     cursor: pointer;
-    height: 50px;
     
 }
 
@@ -212,6 +200,7 @@ input[type="search"] {
     margin-bottom: 5px;
     margin-right: 10px;
     cursor: pointer;
+    font-weight: 800;
 }
 
 
@@ -220,4 +209,130 @@ input[type="search"] {
     transform: scale(1.1);
 }
 
+.content {
+    background-color: #cbd5e1;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 100vh;
+}
 
+.cards{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.card {
+    background-color: white;
+    border-left: 6px solid #facc15;
+    border-radius: 10px;
+    width: 80%;
+    height: 200px;
+    margin: 30px 0;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card > .icons > img{
+    width: 1.2vw;
+}
+
+.card > .icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 95%;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.projects > h6 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.card-text {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.left-container {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.announcement-card,
+.trendingcard {
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+.announcement > .card-text {
+    padding: 5px 10px;
+    text-align: start;
+}
+
+.announcement-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+.announcement > .card-title {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.divider {
+    border: 0.5px solid #737373;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+   margin-left: 10px;
+}
+
+.trend-image-text {
+    display: flex;
+    margin: 15px 20px;
+    align-items: center;
+}
+
+
+.trend-text {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.trending > h3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.announcements > h4 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-left: 20px;
+}

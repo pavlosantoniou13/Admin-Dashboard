@@ -336,3 +336,7 @@ input[type="search"] {
     margin-top: 20px;
     margin-left: 20px;
 }
+
+.trendingcard {
+    height: 60%;
+}
